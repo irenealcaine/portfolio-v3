@@ -1,10 +1,20 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Navbar from "@/Components/Navbar/Navbar";
+import Subtitle from "@/Components/Subtitle/Subtitle";
+import Title from "@/Components/Title/Title";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <section className={styles.pageContainer}>
+        <Title />
+      </section>
+      <section className={styles.pageContainer}>
+        <Subtitle subtitle={"Portfolio"} />
+      </section>
+      <Navbar />
+
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
@@ -89,7 +99,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
-  )
+  );
 }

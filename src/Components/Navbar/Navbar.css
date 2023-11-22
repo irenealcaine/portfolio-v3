@@ -1,0 +1,17 @@
+.navbar {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #3fd9;
+  padding: 20px 10px;
+  border-radius: 50rem;
+}
+.navbar ul {
+  list-style-type: none;
+}
