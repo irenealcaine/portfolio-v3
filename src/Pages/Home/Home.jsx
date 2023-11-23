@@ -3,7 +3,7 @@ import Title from "@/Components/Title/Title";
 
 const Front = () => {
   return (
-    <PageContainer>
+    <PageContainer id={"home"}>
       <Title />
     </PageContainer>
   );

@@ -3,7 +3,7 @@ import Subtitle from "@/Components/Subtitle/Subtitle";
 
 const Portfolio = () => {
   return (
-    <PageContainer>
+    <PageContainer id={"portfolio"}>
       <Subtitle subtitle={"Portfolio"} />
     </PageContainer>
   );
