@@ -1,7 +1,8 @@
 .subtitle {
-  font:
-    bold 100px arial,
-    sans-serif;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 100px;
   font-family: "Rubik Mono One", monospace;
   background-color: #888;
   color: transparent;

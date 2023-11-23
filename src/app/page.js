@@ -1,7 +1,4 @@
 import Navbar from "@/Components/Navbar/Navbar";
-import PageContainer from "@/Components/PageConainer/PageConainer";
-import Subtitle from "@/Components/Subtitle/Subtitle";
-import Title from "@/Components/Title/Title";
 import styles from "./page.module.css";
 import Front from "@/Pages/Home/Home";
 import Portfolio from "@/Pages/Portfolio/Portfolio";
