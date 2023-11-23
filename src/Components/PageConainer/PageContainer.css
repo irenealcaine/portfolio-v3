@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.page-container:has(.title) {
+  align-items: center;
+}
+
 .content {
   width: 70%;
 }
