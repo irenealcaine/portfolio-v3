@@ -4,7 +4,7 @@ import Title from "@/Components/Title/Title";
 const Front = () => {
   return (
     <PageContainer id={"home"}>
-      <Title />
+      <Title title={"Irene Alcaine"}/>
     </PageContainer>
   );
 };
