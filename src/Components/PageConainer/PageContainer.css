@@ -5,10 +5,12 @@
   justify-content: center;
 
   background-color: #fafafa;
+  color: #525252;
 }
 
 .dark {
   background-color: #525252;
+  color: #fafafa;
 }
 
 .page-container:has(.title) {
