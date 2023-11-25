@@ -12,16 +12,27 @@
   background-clip: text;
   position: relative;
   display: inline-block;
-}
-.subtitle::before {
-  content: "";
-  background-color: #fafafa;
-  width: 100%;
-  height: 35%;
-  position: absolute;
-  bottom: 0%;
-  right: 0;
-  border-top: 1px solid #8885;
+
+  &::before {
+    content: "";
+    background-color: #fafafa;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    border-top: 1px solid #8885;
+  }
+
+  &.dark {
+    text-shadow: 2px 2px 8px #525252;
+    background-color: #000;
+
+    &::before {
+      background-color: #525252;
+      border-top: 1px solid rgba(41, 41, 41, 0.333);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
