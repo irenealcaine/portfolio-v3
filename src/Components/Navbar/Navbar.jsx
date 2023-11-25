@@ -1,6 +1,10 @@
-import "./Navbar.css";
+"use client"
+import { useContext } from "react";
+import "./Navbar.scss";
+import { DarkModeContext } from "../../Context/darkModeContext";
 
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <nav className="navbar">
       <ul>
@@ -13,6 +17,9 @@ const Navbar = () => {
         <li>
           <a href="#contact">🥟</a>
         </li>
+      </ul>
+      <ul>
+        <li onClick={() => dispatch({ type: "TOGGLE" })}>☀️</li>
       </ul>
     </nav>
   );
