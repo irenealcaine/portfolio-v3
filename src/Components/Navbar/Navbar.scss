@@ -2,7 +2,7 @@
   height: 200px;
 
   position: fixed;
-  top: calc(50% - 100px);
+  top: calc(50dvh - 100px);
   right: 10px;
 
   display: flex;
@@ -11,7 +11,9 @@
   align-items: center;
   gap: 30px;
 
-  background-color: #0003;
+  background: #0003;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 15px 10px;
   border-radius: 50rem;
 
@@ -28,6 +30,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+
+      color: black;
+
+      &.dark {
+        color: #fafafa;
+      }
 
       a {
         display: flex;

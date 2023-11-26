@@ -2,34 +2,36 @@
 import { useContext } from "react";
 import "./Navbar.scss";
 import { DarkModeContext } from "../../Context/darkModeContext";
-import { IoHomeOutline, IoMailOutline, IoSunnyOutline } from "react-icons/io5";
-import { FaLaptopCode } from "react-icons/fa";
+import { IoHomeOutline, IoMailOutline, IoSunnyOutline, IoCodeSlashOutline, IoMoonOutline, IoLanguageOutline } from "react-icons/io5";
 
 const Navbar = () => {
-  const { dispatch } = useContext(DarkModeContext);
+  const { dispatch, darkMode } = useContext(DarkModeContext);
   return (
     <nav className="navbar">
       <ul>
-        <li>
+        <li className={darkMode ? "dark" : ""}>
           <a href="#home">
             <IoHomeOutline />
           </a>
         </li>
-        <li>
+        <li className={darkMode ? "dark" : ""}>
           <a href="#portfolio">
-            <FaLaptopCode />
+            <IoCodeSlashOutline />
           </a>
         </li>
-        <li>
+        <li className={darkMode ? "dark" : ""}>
           <a href="#contact">
             <IoMailOutline />
           </a>
         </li>
       </ul>
       <ul>
-        <li onClick={() => dispatch({ type: "TOGGLE" })}>
-          <IoSunnyOutline />
+        <li className={darkMode ? "dark" : ""} onClick={() => dispatch({ type: "TOGGLE" })}>
+          {darkMode
+            ? <IoSunnyOutline />
+            : <IoMoonOutline />}
         </li>
+        <li className={darkMode ? "dark" : ""}><IoLanguageOutline /></li>
       </ul>
     </nav>
   );
