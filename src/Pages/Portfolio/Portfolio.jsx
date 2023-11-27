@@ -6,7 +6,12 @@ const Portfolio = () => {
   return (
     <PageContainer id={"portfolio"}>
       <Subtitle subtitle={"Portfolio"} />
-      <Card />
+      <div className="card-container">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </PageContainer>
   );
 };
