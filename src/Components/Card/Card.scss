@@ -1,11 +1,18 @@
 .card {
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  &.dark {
+    border: 2px solid white;
+    h3 {
+      background-color: #525252;
+    }
+  }
 
   h3 {
-    transform: translateY(-25px);
-    background-color: #525252;
+    transform: translateY(-12px);
+
+    background-color: white;
     width: fit-content;
     padding: 0 10px;
   }

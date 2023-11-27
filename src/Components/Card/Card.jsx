@@ -3,11 +3,17 @@ import "./Card.scss";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../../public/next.svg";
+import { DarkModeContext } from "@/Context/darkModeContext";
+import { useContext } from "react";
 
 const Card = () => {
+  const { darkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className={`card`} onClick={()=> setIsOpen(!isOpen)}>
+    <div
+      className={`card ${darkMode ? "dark" : ""}`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <h3>Title</h3>
       {isOpen ? (
         <div>
