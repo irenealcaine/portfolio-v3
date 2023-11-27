@@ -11,7 +11,7 @@ const Card = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={`card ${darkMode ? "dark" : ""}`}
+      className={`card ${darkMode ? "dark" : ""} ${isOpen ? "open" : ""}`}
       onClick={() => setIsOpen(!isOpen)}
     >
       <h3>Title</h3>
