@@ -2,7 +2,6 @@
   text-align: center;
   font-size: 10vw;
   font-weight: lighter;
-  
 }
 .title span {
   opacity: 0;
@@ -12,4 +11,13 @@
 
 .title span.visible {
   opacity: 1;
+}
+.title span.visible.pink {
+  color: rgb(255, 0, 255);
+}
+.title span.visible.green {
+  color: green;
+}
+.title span.visible.blue {
+  color: blue;
 }
