@@ -1,15 +1,17 @@
+@import "src/app/globals.scss";
+
 .page-container {
   min-height: 100dvh;
   width: 100%;
   display: flex;
   justify-content: center;
 
-  background-color: #fafafa;
-  color: #525252;
+  background-color: $light;
+  color: $dark;
 
   &.dark {
-    background-color: #525252;
-    color: #fafafa;
+    background-color: $dark;
+    color: $light;
   }
 }
 

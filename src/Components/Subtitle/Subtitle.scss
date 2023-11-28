@@ -1,12 +1,14 @@
+@import "src/app/globals.scss";
+
 .subtitle {
   text-align: center;
   width: 100%;
   font-weight: bold;
   font-size: 8.5vw;
   font-family: "Rubik Mono One", monospace;
-  background-color: #888;
+  background-color: $dark-gray;
   color: transparent;
-  text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px 8px white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -15,22 +17,22 @@
 
   &::before {
     content: "";
-    background-color: #fafafa;
+    background-color: $light;
     width: 100%;
     height: 35%;
     position: absolute;
     bottom: 0%;
     right: 0;
-    border-top: 1px solid #8885;
+    border-top: 1px solid $light-gray;
   }
 
   &.dark {
-    text-shadow: 2px 2px 8px #525252;
-    background-color: #333;
+    text-shadow: 2px 2px 8px $dark;
+    background-color: $light-gray;
 
     &::before {
-      background-color: #525252;
-      border-top: 1px solid #444;
+      background-color: $dark;
+      border-top: 1px solid $dark-gray;
     }
   }
 }

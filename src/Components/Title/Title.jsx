@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Title = ({ title }) => {
   const [visibleLetters, setVisibleLetters] = useState([]);
-  const colors = ["pink", "blue", "green"];
+  const colors = ["pink", "blue", "green", "red"];
 
   useEffect(() => {
     const interval = setInterval(() => {
