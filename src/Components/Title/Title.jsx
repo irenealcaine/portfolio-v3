@@ -1,5 +1,5 @@
 "use client";
-import "./Title.css";
+import "./Title.scss";
 import React, { useState, useEffect } from "react";
 
 const Title = ({ title }) => {
