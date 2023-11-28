@@ -13,14 +13,14 @@
   align-items: center;
   gap: 30px;
 
-  background: #f05941;
+  background: $orange;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   padding: 15px 10px;
   border-radius: 50rem;
 
   &.dark {
-    background: #872341;
+    background: $maroon;
   }
 
   ul {

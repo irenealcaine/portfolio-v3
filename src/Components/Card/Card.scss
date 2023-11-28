@@ -1,11 +1,11 @@
 @import "src/app/globals.scss";
 
 .card {
-  border: 2px solid $dark;
+  border: 2px solid $red;
   border-radius: 5px;
   padding: 0 10px 10px 10px;
   &.dark {
-    border: 2px solid $light;
+    // border: 2px solid $light;
     h3 {
       background-color: $dark;
     }
@@ -16,7 +16,7 @@
 
     background-color: $light;
     width: fit-content;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   img {
