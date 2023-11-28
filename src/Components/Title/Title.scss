@@ -10,18 +10,19 @@
     display: inline-block;
     &.visible {
       opacity: 1;
-      &.pink {
-        color: $purple;
-      }
-      &.green {
-        color: #00642b;
-      }
-      &.blue {
-        color: #014d80;
-      }
-      &.red {
-        color: #800101;
-      }
+      color: #872341;
+      // &.pink {
+      //   color: $purple;
+      // }
+      // &.green {
+      //   color: #00642b;
+      // }
+      // &.blue {
+      //   color: #014d80;
+      // }
+      // &.red {
+      //   color: #800101;
+      // }
     }
   }
 }

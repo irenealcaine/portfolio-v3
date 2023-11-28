@@ -1,13 +1,20 @@
-"use client"
+"use client";
 import { useContext } from "react";
 import "./Navbar.scss";
 import { DarkModeContext } from "../../Context/darkModeContext";
-import { IoHomeOutline, IoMailOutline, IoSunnyOutline, IoCodeSlashOutline, IoMoonOutline, IoLanguageOutline } from "react-icons/io5";
+import {
+  IoHomeOutline,
+  IoMailOutline,
+  IoSunnyOutline,
+  IoCodeSlashOutline,
+  IoMoonOutline,
+  IoLanguageOutline,
+} from "react-icons/io5";
 
 const Navbar = () => {
   const { dispatch, darkMode } = useContext(DarkModeContext);
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${darkMode ? "dark" : ""}`}>
       <ul>
         <li className={darkMode ? "dark" : ""}>
           <a href="#home">
@@ -26,12 +33,15 @@ const Navbar = () => {
         </li>
       </ul>
       <ul>
-        <li className={darkMode ? "dark" : ""} onClick={() => dispatch({ type: "TOGGLE" })}>
-          {darkMode
-            ? <IoSunnyOutline />
-            : <IoMoonOutline />}
+        <li
+          className={darkMode ? "dark" : ""}
+          onClick={() => dispatch({ type: "TOGGLE" })}
+        >
+          {darkMode ? <IoSunnyOutline /> : <IoMoonOutline />}
         </li>
-        <li className={darkMode ? "dark" : ""}><IoLanguageOutline /></li>
+        <li className={darkMode ? "dark" : ""}>
+          <IoLanguageOutline />
+        </li>
       </ul>
     </nav>
   );

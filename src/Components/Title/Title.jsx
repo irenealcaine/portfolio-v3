@@ -23,7 +23,9 @@ const Title = ({ title }) => {
   return (
     <h1 className="title">
       {title.split("").map((char, index) => {
-        const charColor = colors[index % colors.length];
+        const charColor = "";
+        // colors[index % colors.length];
+
         return (
           <span
             key={index}
