@@ -1,14 +1,16 @@
 import PageContainer from "@/Components/PageConainer/PageConainer";
 import Title from "@/Components/Title/Title";
+import { contact } from "@/Data/socialMedia";
+import "./Home.scss"
 
 const Front = ({ id }) => {
   return (
     <PageContainer id={id}>
       <Title title={"Irene Alcaine"} />
-      <ul>
-        <li>Git</li>
-        <li>Mail</li>
-        <li>LinkedIn</li>
+      <ul className={`contact-list`}>
+        {contact.map((item) => (
+          <li>{item.icon}</li>
+        ))}
       </ul>
     </PageContainer>
   );

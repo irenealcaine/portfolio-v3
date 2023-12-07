@@ -34,7 +34,6 @@
     justify-content: center;
     gap: 5px;
 
-    transition: $transition;
 
     li {
       display: flex;
@@ -44,6 +43,8 @@
 
       color: $dark;
       border: 1px solid transparent;
+
+      transition: $transition;
 
       &.dark {
         color: $light;
