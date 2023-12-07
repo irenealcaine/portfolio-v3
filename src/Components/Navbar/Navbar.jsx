@@ -11,22 +11,22 @@ import {
   IoLanguageOutline,
 } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({ currentSection }) => {
   const { dispatch, darkMode } = useContext(DarkModeContext);
   return (
     <nav className={`navbar ${darkMode ? "dark" : ""}`}>
       <ul>
-        <li className={darkMode ? "dark" : ""}>
+        <li className={`${darkMode ? "dark" : ""} ${currentSection === "home" ? "active" : ""}`}>
           <a href="#home">
             <IoHomeOutline />
           </a>
         </li>
-        <li className={darkMode ? "dark" : ""}>
+        <li className={`${darkMode ? "dark" : ""} ${currentSection === "portfolio" ? "active" : ""}`}>
           <a href="#portfolio">
             <IoCodeSlashOutline />
           </a>
         </li>
-        <li className={darkMode ? "dark" : ""}>
+        <li className={`${darkMode ? "dark" : ""} ${currentSection === "contact" ? "active" : ""}`}>
           <a href="#contact">
             <IoMailOutline />
           </a>

@@ -1,9 +1,9 @@
 import PageContainer from "@/Components/PageConainer/PageConainer";
 import Title from "@/Components/Title/Title";
 
-const Front = () => {
+const Front = ({ id }) => {
   return (
-    <PageContainer id={"home"}>
+    <PageContainer id={id}>
       <Title title={"Irene Alcaine"} />
       <ul>
         <li>Git</li>
